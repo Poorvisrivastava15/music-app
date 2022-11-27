@@ -1,0 +1,12 @@
+.form button{
+    width: 437px;
+}
+.box-image img{
+    /* padding: 50px; */
+    width: 100%;
+    height: 550px;
+    margin-top: 30px;
+}
+.bg-image{
+    background-image: url('https://images.pexels.com/photos/13062586/pexels-photo-13062586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
