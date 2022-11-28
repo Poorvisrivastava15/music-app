@@ -19,7 +19,7 @@ function App() {
        
         <Header />
         <Routes>
-          <Route element={<Navigate to="/homepage" />} path="/" />
+          <Route element={<Navigate to="/login" />} path="/" />
 
           <Route element={<Home></Home>} path="homepage" />
           <Route element={<Login></Login>} path="login" />

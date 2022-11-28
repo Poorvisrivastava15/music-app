@@ -19,6 +19,8 @@ app.use('/user', userRouter);
 app.use('/music', MusicRouter);
 app.use('/util', util);
 
+app.use(express.static('./static/uploads'));
+
 // route
 app.get( '/', (req, res) => {
     res.send('Response from express');
@@ -28,6 +30,8 @@ app.get( '/', (req, res) => {
 app.get( '/home', (req, res) => {
     res.send('Response from home');
 })
+
+
 
 app.listen( port, () => {
     console.log('server has started');

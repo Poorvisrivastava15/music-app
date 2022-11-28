@@ -1,8 +1,11 @@
 import { Formik } from 'formik';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   const loginSubmit = async (formdata, { resetForm }) => {
     console.log(formdata)
@@ -25,6 +28,7 @@ const Login = () => {
 
       const data = await response.json();
       sessionStorage.setItem('user', JSON.stringify(data));
+      navigate('/ListMusic')
 
 
     }else if((response.status === 401)){

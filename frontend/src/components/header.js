@@ -47,8 +47,8 @@ const Header = () => {
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link" to="/event">
-                  Event Handling
+                <NavLink className="nav-link" to="/ListMusic">
+                  Listen Music
                 </NavLink>
               </li>
               

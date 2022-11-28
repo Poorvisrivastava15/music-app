@@ -1,8 +1,11 @@
 import { Formik } from 'formik';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const Register = () => {
+
+    const navigate = useNavigate();
 
     const userSubmit = async (formdata) => {
         console.log(formdata);
@@ -27,6 +30,7 @@ const Register = () => {
                 title : 'Well Done',
                 text : 'Registered Successfuly'
             })
+            navigate('/login');
         }
     }
 
